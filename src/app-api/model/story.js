@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const storySchema = new mongoose.Schema({
   title: { type: String, unique: true, required: true },
   summary: { type: String, required: true },
-  chapters: [{ type: mongoose.Schema.Types.ObjectId, ref: "Chapter" }],
+  chapters: [{ type: mongoose.Schema.Types.ObjectId, ref: "chapter" }],
   createdAt: { type: Date, default: Date.now },
 });
 

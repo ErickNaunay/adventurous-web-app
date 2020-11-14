@@ -4,7 +4,6 @@ const { StatusCodes } = require("http-status-codes");
 const { isValidObjectId } = require("mongoose");
 const mongoose = require("mongoose");
 const storyModel = mongoose.model("story");
-const chapterModel = mongoose.model("chapter");
 
 const find = async (req, res) => {
   let stories;
