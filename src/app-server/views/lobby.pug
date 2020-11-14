@@ -1,0 +1,54 @@
+doctype html
+head
+  title Adventure
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+  link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='Estilo.css')
+div
+  h1(style='font-family:Comic Sans; color:#3b5998; text-align: center;') Adventure
+  h5(style='font-family:Comic Sans; color:#c13584; text-align: center;') Las historias van como tu quieras que vayan
+.btn
+  a(href='Home.html')
+    button.btn.btn-primary(type='button') Regresar
+// The Tour Section
+#tour.w3-black
+  .w3-container.w3-content.w3-padding-64(style='max-width:800px')
+    h2.w3-wide.w3-center(style='font-family:Comic Sans; color:#3b5998; text-align: center;') Bienvenido/a a Adventure
+    p.w3-opacity.w3-center
+      i Escoge la historia de tu preferencia y comienza esta aventura llena de emociones
+    br
+    .w3-row-padding.w3-padding-32(style='margin:0 -16px')
+      .w3-third.w3-margin-bottom
+        img.w3-hover-opacity(src='img/fondo.jpg' alt='New York' style='width:100%')
+        .w3-container.w3-white
+          p(style='font-family:Comic Sans; color:#c13584;')
+            b Una parada Inesperada
+          p.w3-opacity
+          p(style='font-family:Comic Sans; color:#3b5998;')
+            | Despues de un dia agotador de entrenamiento AS debe decidir si hacer una parada para refrescarse o seguir su camino para descansar, esta desicion es fundamental.
+          button.w3-button.w3-black.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Empezar a jugar
+      .w3-third.w3-margin-bottom
+        img.w3-hover-opacity(src='img/Fondo2.jpg' alt='Paris' style='width:100%')
+        .w3-container.w3-white
+          p(style='font-family:Comic Sans; color:#c13584;')
+            b En busca de mi estrella
+          p.w3-opacity
+          p(style='font-family:Comic Sans; color:#3b5998;')
+            | Un joven superdotado que le hacen una propuesta para poder ser un miembro de la NASA pero eso significaria dejar de lado su vida como la conoce actualmente.
+          button.w3-button.w3-black.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Empezar a jugar
+      .w3-third.w3-margin-bottom
+        img.w3-hover-opacity(src='img/Fondo3.jpg' alt='San Francisco' style='width:100%')
+        .w3-container.w3-white
+          p(style='font-family:Comic Sans; color:#c13584;')
+            b Vuelta al mundo
+          p.w3-opacity
+          p(style='font-family:Comic Sans; color:#3b5998;')
+            | Para cumplir su sue&ntilde;o esta pareja debe mover las fichas indicadas para lograr ir avanzando en cada desafio que se les presenta y de esta forma lograr conocer el mundo.
+          button.w3-button.w3-black.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Empezar a jugar

@@ -1,0 +1,37 @@
+CSS
+.btn{margin:16px 6px 2px 0;color:#ffffff;font-weight:bold;display:inline-block;padding:6px 12px;font-size:16px;text-align:center;cursor:pointer;outline:0;float:left;background-color:#55acee;}
+.btn a {color:#ffffff;text-decoration:none;}
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+#particles-js{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
